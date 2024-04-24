@@ -1,6 +1,14 @@
 public class WebsiteVisitors {
-    private static int totalCount = 0;
-    private int instanceCount = 0;
+    private static long totalCount = 0;
+    private long instanceCount = 0;
+
+    public long getInstanceCount() {
+        return instanceCount;
+    }
+
+    public static void setTotalCount(long totalCount) {
+        WebsiteVisitors.totalCount = totalCount;
+    }
 
     public static void incrementTotalCount() {
         totalCount++;
